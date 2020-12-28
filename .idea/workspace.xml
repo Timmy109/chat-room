@@ -29,7 +29,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609163235005</updated>
-      <workItem from="1609163236062" duration="1967000" />
+      <workItem from="1609163236062" duration="2295000" />
     </task>
     <task id="LOCAL-00001" summary="Sick commit bro">
       <created>1609164841761</created>
@@ -38,7 +38,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609164841761</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Sick commit bro">
+      <created>1609165588431</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609165588431</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -57,10 +64,10 @@
       <screen x="0" y="0" width="1707" height="930" />
     </state>
     <state x="663" y="87" key="Github.UntrackedFilesDialog/0.0.1707.930@0.0.1707.930" timestamp="1609163315967" />
-    <state x="446" y="196" key="Vcs.Push.Dialog.v2" timestamp="1609164843237">
+    <state x="446" y="196" key="Vcs.Push.Dialog.v2" timestamp="1609165589487">
       <screen x="0" y="0" width="1707" height="930" />
     </state>
-    <state x="446" y="196" key="Vcs.Push.Dialog.v2/0.0.1707.930@0.0.1707.930" timestamp="1609164843237" />
+    <state x="446" y="196" key="Vcs.Push.Dialog.v2/0.0.1707.930@0.0.1707.930" timestamp="1609165589487" />
     <state x="672" y="379" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609165567337">
       <screen x="0" y="0" width="1707" height="930" />
     </state>
