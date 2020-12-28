@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1a6790c-4d9a-4442-8ead-adff4e3c6cd7" name="Default Changelist" comment="Sick commit bro">
+    <list default="true" id="c1a6790c-4d9a-4442-8ead-adff4e3c6cd7" name="Default Changelist" comment="Tailwind commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/chat-page/chat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +40,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609163235005</updated>
-      <workItem from="1609163236062" duration="4167000" />
+      <workItem from="1609163236062" duration="4519000" />
     </task>
     <task id="LOCAL-00001" summary="Sick commit bro">
       <created>1609164841761</created>
@@ -81,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609166405844</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tailwind commit">
+      <created>1609167785529</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609167785529</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,7 +92,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sick commit bro" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sick commit bro" />
+    <MESSAGE value="Tailwind commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tailwind commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="732" y="363" key="Github.ShareDialog" timestamp="1609163311621">
@@ -100,10 +104,10 @@
       <screen x="0" y="0" width="1707" height="930" />
     </state>
     <state x="663" y="87" key="Github.UntrackedFilesDialog/0.0.1707.930@0.0.1707.930" timestamp="1609163315967" />
-    <state x="446" y="196" key="Vcs.Push.Dialog.v2" timestamp="1609166406947">
+    <state x="446" y="196" key="Vcs.Push.Dialog.v2" timestamp="1609168008974">
       <screen x="0" y="0" width="1707" height="930" />
     </state>
-    <state x="446" y="196" key="Vcs.Push.Dialog.v2/0.0.1707.930@0.0.1707.930" timestamp="1609166406947" />
+    <state x="446" y="196" key="Vcs.Push.Dialog.v2/0.0.1707.930@0.0.1707.930" timestamp="1609168008974" />
     <state x="672" y="379" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609166299943">
       <screen x="0" y="0" width="1707" height="930" />
     </state>
