@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1a6790c-4d9a-4442-8ead-adff4e3c6cd7" name="Default Changelist" comment="Sick commit bro" />
+    <list default="true" id="c1a6790c-4d9a-4442-8ead-adff4e3c6cd7" name="Default Changelist" comment="Sick commit bro">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/chat-page/chat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/index.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +25,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.11" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\timud\WebstormProjects\chat-room\main" />
+      <recent name="C:\Users\timud\WebstormProjects\chat-room\main\js" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -29,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609163235005</updated>
-      <workItem from="1609163236062" duration="2699000" />
+      <workItem from="1609163236062" duration="4167000" />
     </task>
     <task id="LOCAL-00001" summary="Sick commit bro">
       <created>1609164841761</created>
@@ -52,7 +67,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609166095668</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Sick commit bro">
+      <created>1609166323756</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609166323756</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Sick commit bro">
+      <created>1609166405844</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609166405844</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,10 +100,10 @@
       <screen x="0" y="0" width="1707" height="930" />
     </state>
     <state x="663" y="87" key="Github.UntrackedFilesDialog/0.0.1707.930@0.0.1707.930" timestamp="1609163315967" />
-    <state x="446" y="196" key="Vcs.Push.Dialog.v2" timestamp="1609166096663">
+    <state x="446" y="196" key="Vcs.Push.Dialog.v2" timestamp="1609166406947">
       <screen x="0" y="0" width="1707" height="930" />
     </state>
-    <state x="446" y="196" key="Vcs.Push.Dialog.v2/0.0.1707.930@0.0.1707.930" timestamp="1609166096663" />
+    <state x="446" y="196" key="Vcs.Push.Dialog.v2/0.0.1707.930@0.0.1707.930" timestamp="1609166406947" />
     <state x="672" y="379" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609166299943">
       <screen x="0" y="0" width="1707" height="930" />
     </state>
