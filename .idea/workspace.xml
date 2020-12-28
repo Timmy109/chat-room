@@ -29,7 +29,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609163235005</updated>
-      <workItem from="1609163236062" duration="2295000" />
+      <workItem from="1609163236062" duration="2699000" />
     </task>
     <task id="LOCAL-00001" summary="Sick commit bro">
       <created>1609164841761</created>
@@ -45,7 +45,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609165588431</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Sick commit bro">
+      <created>1609166095668</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609166095668</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -64,13 +71,13 @@
       <screen x="0" y="0" width="1707" height="930" />
     </state>
     <state x="663" y="87" key="Github.UntrackedFilesDialog/0.0.1707.930@0.0.1707.930" timestamp="1609163315967" />
-    <state x="446" y="196" key="Vcs.Push.Dialog.v2" timestamp="1609165589487">
+    <state x="446" y="196" key="Vcs.Push.Dialog.v2" timestamp="1609166096663">
       <screen x="0" y="0" width="1707" height="930" />
     </state>
-    <state x="446" y="196" key="Vcs.Push.Dialog.v2/0.0.1707.930@0.0.1707.930" timestamp="1609165589487" />
-    <state x="672" y="379" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609165567337">
+    <state x="446" y="196" key="Vcs.Push.Dialog.v2/0.0.1707.930@0.0.1707.930" timestamp="1609166096663" />
+    <state x="672" y="379" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609166299943">
       <screen x="0" y="0" width="1707" height="930" />
     </state>
-    <state x="672" y="379" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1707.930@0.0.1707.930" timestamp="1609165567337" />
+    <state x="672" y="379" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1707.930@0.0.1707.930" timestamp="1609166299943" />
   </component>
 </project>
