@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1a6790c-4d9a-4442-8ead-adff4e3c6cd7" name="Default Changelist" comment="Tailwind commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c1a6790c-4d9a-4442-8ead-adff4e3c6cd7" name="Default Changelist" comment="Things">
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +64,7 @@
       <workItem from="1609163236062" duration="6245000" />
       <workItem from="1609169860667" duration="40000" />
       <workItem from="1609170470645" duration="972000" />
-      <workItem from="1609199381425" duration="1095000" />
+      <workItem from="1609199381425" duration="1737000" />
     </task>
     <task id="LOCAL-00001" summary="Sick commit bro">
       <created>1609164841761</created>
@@ -123,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609200047649</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Things">
+      <created>1609200492814</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609200492814</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +150,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sick commit bro" />
     <MESSAGE value="Tailwind commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tailwind commit" />
+    <MESSAGE value="Things" />
+    <option name="LAST_COMMIT_MESSAGE" value="Things" />
   </component>
   <component name="WindowStateProjectService">
     <state x="732" y="363" key="Github.ShareDialog" timestamp="1609163311621">
@@ -155,10 +162,10 @@
       <screen x="0" y="0" width="1707" height="930" />
     </state>
     <state x="663" y="87" key="Github.UntrackedFilesDialog/0.0.1707.930@0.0.1707.930" timestamp="1609163315967" />
-    <state x="446" y="196" key="Vcs.Push.Dialog.v2" timestamp="1609200049408">
+    <state x="446" y="196" key="Vcs.Push.Dialog.v2" timestamp="1609200493889">
       <screen x="0" y="0" width="1707" height="930" />
     </state>
-    <state x="446" y="196" key="Vcs.Push.Dialog.v2/0.0.1707.930@0.0.1707.930" timestamp="1609200049408" />
+    <state x="446" y="196" key="Vcs.Push.Dialog.v2/0.0.1707.930@0.0.1707.930" timestamp="1609200493889" />
     <state x="661" y="117" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1609168136189">
       <screen x="0" y="0" width="1707" height="930" />
     </state>
