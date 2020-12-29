@@ -1,24 +1,52 @@
 <html lang="en">
 <head>
-  <base href="/">
   <link rel="stylesheet" href="build/tailwind.css">
-  <link type="text/css" rel="stylesheet" href="css/particles.css">
+  <link type="text/css" rel="stylesheet" href="particles.css">
+
   <title>Testing123</title>
 
 </head>
 
+
+
 <body>
+<div class="min-h-screen bg-transparent py-6 flex flex-col justify-center sm:py-12 absolute inset-0">
+  <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+    <div class="absolute inset-0 bg-gradient-to-r from-green-200 to-green-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+    <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+      <div class="max-w-md mx-auto">
+        <div class="divide-y divide-gray-200">
+          <div class="py-0 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+            <p class="text-red-600">Please login to access files:</p>
+            <form class="grid" name="login">
+              Username:<input class="border-b border-t border-l border-r border-black rounded-lg" type="text" name="userid"/>
+              Password:<input class="border-b border-t border-l border-r border-black rounded-lg" type="password" name="pswrd"/>
+            </form>
+
+          </div>
+          <div class="pt-4 text-base leading-6 font-bold sm:text-lg sm:leading-7">
+            <p>
+              <a href="https://tailwindcss.com/docs" class="text-red-700 hover:text-red-900">Login</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div id="particles-js">
   <script type="text/javascript" src="particles.js"></script>
   <script type="text/javascript" src="app.js"></script>
-  <div>
-    <div>
-      <h1 class="py-20">Testing123123123aaaa</h1>
-      <h2>Another test</h2>
-    </div>
-    <p class="absolute bottom-0 left-0 text-sm">Copyright © Tim Uding & Joe Smith  2020</p>
-  </div>
+
+
+
+
 </div>
+
+
+  <div>
+    <p class="absolute bottom-0 left-0 text-sm text-white pb-2 pl-2">Copyright © Tim Uding & Joe Smith  2020</p>
+  </div>
 
 
 </body>
