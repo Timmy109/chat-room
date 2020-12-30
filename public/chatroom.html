@@ -1,13 +1,27 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="build/tailwind.css" />
-    <link type="text/css" rel="stylesheet" href="particles.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="writeToFile.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="build/tailwind.css">
+    <link type="text/css" rel="stylesheet" href="particles.js">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <script>
+        const fs = require(fs)
+        function fileWrite() {
+    console.log("test")
+    
+    fs.writeFile('./log/log.txt', 'Hello content!', function (err) {
+        if (err) throw err;
+        console.log('Saved!');
+      });
+}
+    </script>
+    
     <title>Chatroom</title>
 </head>
 
-<body onLoad="$onLoad()">
+<body onLoad="scrollDown()">
     <div class="min-h-screen bg-black flex flex-col justify-center fixed inset-0">
         <div class="relative">
             <div class="fixed inset-0 flex flex-col justify-center items-center">
@@ -23,10 +37,17 @@
                                 <div id="messages"class="fixed overflow-y-scroll pl-3" style="max-width:75%;min-width:75%;max-height:55%;min-height:55%;">
 
                                     <script>
-                                        function $onLoad() {
+                                        function scrollDown() {
                                             var objDiv = document.getElementById("messages");
                                             objDiv.scrollTop = objDiv.scrollHeight;
                                         }
+
+                                        function readTextFile() {
+                                            fetch('log/log.txt')
+                                            .then(response => response.text())
+                                            .then(text => console.log(text))
+                                        }
+                                        
                                     </script>
 
                                     <div>
@@ -89,7 +110,7 @@
                                             </form>
                                         </div>
                                         <div class="float-right mr-10">
-                                            <button style="max-width:100%;min-width:100%;"
+                                            <button style="max-width:100%;min-width:100%;" onclick="fileWrite()"
                                                 class="bg-blue-400 hover:bg-blue-light text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-black rounded-xl">Button</button>
                                         </div>
                                     </div>
