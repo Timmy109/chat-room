@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="build/tailwind.css" />
+    <link type="text/css" rel="stylesheet" href="particles.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Chatroom</title>
+</head>
+
+<body onLoad="$onLoad()">
+    <div class="min-h-screen bg-black flex flex-col justify-center fixed inset-0">
+        <div class="relative">
+            <div class="fixed inset-0 flex flex-col justify-center items-center">
+                <div class="bg-gray-200 shadow-lg rounded-3xl fixed"
+                    style="max-width:75%;min-width:75%;max-height:75%;min-height:75%;">
+                    <div class="">
+                        <div class="divide-y divide-gray-200">
+                            <div class="text-base leading-7 text-gray-700 sm:text-lg sm:leading-7">
+                                <p class="text-black font-extrabold font-sans pl-4 pt-3 text-2xl">Chatroom</p>
+                                <p class="text-black font-bold font-sans pl-7 pb-4 text-sm">Welcome to the chat room</p>
+
+                                <!-- Chatbox -->
+                                <div id="messages"class="fixed overflow-y-scroll pl-3" style="max-width:75%;min-width:75%;max-height:55%;min-height:55%;">
+
+                                    <script>
+                                        function $onLoad() {
+                                            var objDiv = document.getElementById("messages");
+                                            objDiv.scrollTop = objDiv.scrollHeight;
+                                        }
+                                    </script>
+
+                                    <div>
+                                        <div class="w3-panel w3-card-2 break-words rounded-xl"
+                                            style="margin-top: 1%;;margin-right: 5%;">
+                                            <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
+                                            <p><br>Hello my name is Tim and I am on code</p>
+                                            <footer class="float-right text-xs pb-1.5 font-bold">1:02pm</foooter>
+                                        </div>
+                                        <div class="w3-panel w3-card-2 break-words rounded-xl"
+                                            style="margin-top: 1%;margin-right: 5%;">
+                                            <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
+                                            <p><br>Hello my name is Tim and I am on code</p>
+                                            <footer class="float-right text-xs pb-1.5 font-bold">1:02pm</foooter>
+                                        </div>
+                                        <div class="w3-panel w3-card-2 break-words rounded-xl"
+                                            style="margin-top: 1%;margin-right: 5%;">
+                                            <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
+                                            <p><br>Hello my name is Tim and I am on code</p>
+                                            <footer class="float-right text-xs pb-1.5 font-bold">1:02pm</foooter>
+                                        </div>
+                                        <div class="w3-panel w3-card-2 break-words rounded-xl"
+                                            style="margin-top: 1%;margin-right: 5%;">
+                                            <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
+                                            <p><br>Hello my name is Tim and I am on code</p>
+                                            <footer class="float-right text-xs pb-1.5 font-bold">1:02pm</foooter>
+                                        </div>
+                                        <div class="w3-panel w3-card-2 break-words rounded-xl"
+                                            style="margin-top: 1%;margin-right: 5%;">
+                                            <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
+                                            <p><br>Hello my name is Tim and I am on code</p>
+                                            <footer class="float-right text-xs pb-1.5 font-bold">1:02pm</foooter>
+                                        </div>
+                                        <div class="w3-panel w3-card-2 break-words rounded-xl"
+                                            style="margin-top: 1%;margin-right: 5%;">
+                                            <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
+                                            <p><br>Hello my name is Tim and I am on code</p>
+                                            <footer class="float-right text-xs pb-1.5 font-bold">1:02pm</foooter>
+                                        </div>
+                                        <div class="w3-panel w3-card-2 break-words rounded-xl"
+                                            style="margin-top: 1%;margin-right: 5%;">
+                                            <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
+                                            <p><br>Hello my name is Tim and I am on code</p>
+                                            <footer class="float-right text-xs pb-1.5 font-bold">1:02pm</foooter>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="px-2 pt-6 divide-y-2 divide-gray-600 divide-solid absolute w-full bottom-10">
+                                    <p></p>
+                                    <div class="max-h-px pt-2">
+
+
+                                        <div class="inline-flex">
+
+                                            <form class="grid" name="login">Enter Chat:
+
+                                                <input class="border-l border-black rounded-r-lg outline-none pl-1"
+                                                    type="text" name="userid">
+                                            </form>
+                                        </div>
+                                        <div class="float-right mr-10">
+                                            <button style="max-width:100%;min-width:100%;"
+                                                class="bg-blue-400 hover:bg-blue-light text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-black rounded-xl">Button</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-base leading-6 font-bold sm:text-lg sm:leading-7"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
