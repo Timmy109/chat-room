@@ -1,27 +1,14 @@
 <html lang="en">
 
 <head>
-    <script src="writeToFile.js" type="text/javascript"></script>
     <link rel="stylesheet" href="build/tailwind.css">
     <link type="text/css" rel="stylesheet" href="particles.js">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-    <script>
-        const fs = require(fs)
-        function fileWrite() {
-    console.log("test")
-    
-    fs.writeFile('./log/log.txt', 'Hello content!', function (err) {
-        if (err) throw err;
-        console.log('Saved!');
-      });
-}
-    </script>
-    
+    <script type="text/javascipt" src="js/scripts.js"></script>
     <title>Chatroom</title>
 </head>
 
-<body onLoad="scrollDown()">
+<body onLoad="loadPage()">
     <div class="min-h-screen bg-black flex flex-col justify-center fixed inset-0">
         <div class="relative">
             <div class="fixed inset-0 flex flex-col justify-center items-center">
@@ -36,63 +23,77 @@
                                 <!-- Chatbox -->
                                 <div id="messages"class="fixed overflow-y-scroll pl-3" style="max-width:75%;min-width:75%;max-height:55%;min-height:55%;">
 
-                                    <script>
-                                        function scrollDown() {
-                                            var objDiv = document.getElementById("messages");
-                                            objDiv.scrollTop = objDiv.scrollHeight;
-                                        }
+                                        <script>
+                                            function loadPage() {
+    scrollDown;
+}
 
-                                        function readTextFile() {
-                                            fetch('log/log.txt')
-                                            .then(response => response.text())
-                                            .then(text => console.log(text))
-                                        }
-                                        
-                                    </script>
+function scrollDown() {
+    var objDiv = document.getElementById("messages");
+    objDiv.scrollTop = objDiv.scrollHeight;
+}
 
-                                    <div>
-                                        <div class="w3-panel w3-card-2 break-words rounded-xl"
-                                            style="margin-top: 1%;;margin-right: 5%;">
-                                            <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
-                                            <p><br>Hello my name is Tim and I am on code</p>
-                                            <footer class="float-right text-xs pb-1.5 font-bold">1:02pm</foooter>
-                                        </div>
-                                        <div class="w3-panel w3-card-2 break-words rounded-xl"
-                                            style="margin-top: 1%;margin-right: 5%;">
-                                            <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
-                                            <p><br>Hello my name is Tim and I am on code</p>
-                                            <footer class="float-right text-xs pb-1.5 font-bold">1:02pm</foooter>
-                                        </div>
-                                        <div class="w3-panel w3-card-2 break-words rounded-xl"
-                                            style="margin-top: 1%;margin-right: 5%;">
-                                            <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
-                                            <p><br>Hello my name is Tim and I am on code</p>
-                                            <footer class="float-right text-xs pb-1.5 font-bold">1:02pm</foooter>
-                                        </div>
-                                        <div class="w3-panel w3-card-2 break-words rounded-xl"
-                                            style="margin-top: 1%;margin-right: 5%;">
-                                            <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
-                                            <p><br>Hello my name is Tim and I am on code</p>
-                                            <footer class="float-right text-xs pb-1.5 font-bold">1:02pm</foooter>
-                                        </div>
-                                        <div class="w3-panel w3-card-2 break-words rounded-xl"
-                                            style="margin-top: 1%;margin-right: 5%;">
-                                            <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
-                                            <p><br>Hello my name is Tim and I am on code</p>
-                                            <footer class="float-right text-xs pb-1.5 font-bold">1:02pm</foooter>
-                                        </div>
-                                        <div class="w3-panel w3-card-2 break-words rounded-xl"
-                                            style="margin-top: 1%;margin-right: 5%;">
-                                            <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
-                                            <p><br>Hello my name is Tim and I am on code</p>
-                                            <footer class="float-right text-xs pb-1.5 font-bold">1:02pm</foooter>
-                                        </div>
-                                        <div class="w3-panel w3-card-2 break-words rounded-xl"
-                                            style="margin-top: 1%;margin-right: 5%;">
-                                            <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
-                                            <p><br>Hello my name is Tim and I am on code</p>
-                                            <footer class="float-right text-xs pb-1.5 font-bold">1:02pm</foooter>
-                                        </div>
+function readFile() {
+    fetch('log/log.txt')
+    .then(response => response.text())
+    .then(text => console.log(text))
+ 
+}
+
+function lineCount( text ) {
+    var nLines = 0;
+    for( var i = 0, n = text.length;  i < n;  ++i ) {
+        if( text[i] === '\n' ) {
+            ++nLines;
+        }
+    }
+    return nLines;
+    console.log(nLines);
+
+}
+
+function sendMessage() {
+
+    let today = new Date();
+
+    let minute = today.getMinutes.toString();
+
+    console.log(minute);
+    
+
+    if ((minute === "1") || (minute === "2") || (minute === "3") || (minute === "4") || 
+    (minute === "5") || (minute === "6") || (minute === "7") || (minute === "8") ||
+    (minute === "9")) {
+        time = today.getHours() + `:` + "0" + today.getMinutes();
+        console.log("yes");
+    } else {
+        time = today.getHours() + `:` + today.getMinutes();
+
+    }
+
+    
+    //let date = today.getFullYear() + `/` + (today.getMonth()+1) + `/` + today.getDay()
+
+    const msg = document.getElementById("chatMessageInput")
+
+    if (msg.value === "") {return;}
+
+
+    document.getElementById("message-container").innerHTML += 
+
+    `<div class="w3-panel w3-card-2 break-words rounded-xl"
+        style="margin-top: 1%;;margin-right: 5%;">
+        <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
+        <br /><p>` + msg.value + `</p>
+        <footer class="float-right text-xs pb-1.5 font-bold">`+ time +`</footer>
+        </div>`
+
+    msg.value = "";  
+}
+                                            </script>
+
+                                    <div id="message-container">
+                                        <!--Messages go here-->
                                     </div>
                                 </div>
                                 <div
@@ -106,12 +107,12 @@
                                             <form class="grid" name="login">Enter Chat:
 
                                                 <input class="border-l border-black rounded-r-lg outline-none pl-1"
-                                                    type="text" name="userid">
+                                                    type="text" name="userid" id="chatMessageInput">
                                             </form>
                                         </div>
                                         <div class="float-right mr-10">
-                                            <button style="max-width:100%;min-width:100%;" onclick="fileWrite()"
-                                                class="bg-blue-400 hover:bg-blue-light text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-black rounded-xl">Button</button>
+                                            <button style="max-width:100%;min-width:100%;outline:none;" onclick="sendMessage()"
+                                                class="bg-blue-400 hover:bg-blue-light text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-black rounded-xl mt-2">Send</button>
                                         </div>
                                     </div>
                                 </div>
