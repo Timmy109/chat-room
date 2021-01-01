@@ -21,76 +21,77 @@
                                 <p class="text-black font-bold font-sans pl-7 pb-4 text-sm">Welcome to the chat room</p>
 
                                 <!-- Chatbox -->
-                                <div id="messages"class="fixed overflow-y-scroll pl-3" style="max-width:75%;min-width:75%;max-height:55%;min-height:55%;">
+                                <div id="messages" class="fixed overflow-y-scroll pl-3"
+                                    style="max-width:75%;min-width:75%;max-height:55%;min-height:55%;">
 
-                                        <script>
-                                            function loadPage() {
-    scrollDown;
-}
+                                    <script>
+                                        function loadPage() {
+                                            scrollDown;
+                                        }
 
-function scrollDown() {
-    var objDiv = document.getElementById("messages");
-    objDiv.scrollTop = objDiv.scrollHeight;
-}
+                                        function scrollDown() {
+                                            var objDiv = document.getElementById("messages");
+                                            objDiv.scrollTop = objDiv.scrollHeight;
+                                        }
 
-function readFile() {
-    fetch('log/log.txt')
-    .then(response => response.text())
-    .then(text => console.log(text))
- 
-}
+                                        function readFile() {
+                                            fetch('log/log.txt')
+                                                .then(response => response.text())
+                                                .then(text => console.log(text))
 
-function lineCount( text ) {
-    var nLines = 0;
-    for( var i = 0, n = text.length;  i < n;  ++i ) {
-        if( text[i] === '\n' ) {
-            ++nLines;
-        }
-    }
-    return nLines;
-    console.log(nLines);
+                                        }
 
-}
+                                        function lineCount(text) {
+                                            var nLines = 0;
+                                            for (var i = 0, n = text.length; i < n; ++i) {
+                                                if (text[i] === '\n') {
+                                                    ++nLines;
+                                                }
+                                            }
+                                            return nLines;
+                                            console.log(nLines);
 
-function sendMessage() {
+                                        }
 
-    let today = new Date();
+                                        function sendMessage() {
 
-    let minute = today.getMinutes.toString();
+                                            let today = new Date();
 
-    console.log(minute);
-    
+                                            let minute = today.getMinutes.toString();
 
-    if ((minute === "1") || (minute === "2") || (minute === "3") || (minute === "4") || 
-    (minute === "5") || (minute === "6") || (minute === "7") || (minute === "8") ||
-    (minute === "9")) {
-        time = today.getHours() + `:` + "0" + today.getMinutes();
-        console.log("yes");
-    } else {
-        time = today.getHours() + `:` + today.getMinutes();
-
-    }
-
-    
-    //let date = today.getFullYear() + `/` + (today.getMonth()+1) + `/` + today.getDay()
-
-    const msg = document.getElementById("chatMessageInput")
-
-    if (msg.value === "") {return;}
+                                            console.log(minute);
 
 
-    document.getElementById("message-container").innerHTML += 
+                                            if ((minute === "1") || (minute === "2") || (minute === "3") || (minute === "4") ||
+                                                (minute === "5") || (minute === "6") || (minute === "7") || (minute === "8") ||
+                                                (minute === "9")) {
+                                                time = today.getHours() + `:` + "0" + today.getMinutes();
+                                                console.log("yes");
+                                            } else {
+                                                time = today.getHours() + `:` + today.getMinutes();
 
-    `<div class="w3-panel w3-card-2 break-words rounded-xl"
+                                            }
+
+
+                                            //let date = today.getFullYear() + `/` + (today.getMonth()+1) + `/` + today.getDay()
+
+                                            const msg = document.getElementById("chatMessageInput")
+
+                                            if (msg.value === "") { return; }
+
+
+                                            document.getElementById("message-container").innerHTML +=
+
+                                                `<div class="w3-panel w3-card-2 break-words rounded-xl"
         style="margin-top: 1%;;margin-right: 5%;">
         <header class="float-left text-xs pt-1.5 font-bold">Tim </header>
         <br /><p>` + msg.value + `</p>
-        <footer class="float-right text-xs pb-1.5 font-bold">`+ time +`</footer>
+        <footer class="float-right text-xs pb-1.5 font-bold">`+ time + `</footer>
         </div>`
 
-    msg.value = "";  
-}
-                                            </script>
+                                            msg.value = "";
+                                        }
+                                    </script>
 
                                     <div id="message-container">
                                         <!--Messages go here-->
@@ -111,7 +112,8 @@ function sendMessage() {
                                             </form>
                                         </div>
                                         <div class="float-right mr-10">
-                                            <button style="max-width:100%;min-width:100%;outline:none;" onclick="sendMessage()"
+                                            <button style="max-width:100%;min-width:100%;outline:none;"
+                                                onclick="sendMessage()"
                                                 class="bg-blue-400 hover:bg-blue-light text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-black rounded-xl mt-2">Send</button>
                                         </div>
                                     </div>
