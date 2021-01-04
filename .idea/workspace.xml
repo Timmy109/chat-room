@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1a6790c-4d9a-4442-8ead-adff4e3c6cd7" name="Default Changelist" comment="Things">
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/chatroom.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/chatroom.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +65,7 @@
       <workItem from="1609169860667" duration="40000" />
       <workItem from="1609170470645" duration="972000" />
       <workItem from="1609199381425" duration="1737000" />
+      <workItem from="1609747779187" duration="72000" />
     </task>
     <task id="LOCAL-00001" summary="Sick commit bro">
       <created>1609164841761</created>
