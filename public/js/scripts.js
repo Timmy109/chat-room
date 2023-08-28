@@ -1,4 +1,4 @@
-function loadPage() {
+/* function loadPage() {
     scrollDown;
 }
 
@@ -29,4 +29,4 @@ function sendMessage() {
         </div>`
 
     msg.value = "";  
-}
+} */

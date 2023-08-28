@@ -1,40 +1,115 @@
 <html lang="en">
+
+<!-- A WebApp that uses websockets to transmit & receive chat messages -->
+
 <head>
-  <link rel="stylesheet" href="build/tailwind.css">
-  <link type="text/css" rel="stylesheet" href="particles.css">
-  <title>Testing123</title>
+    <link rel="stylesheet" type="text/css" href="./public/build/tailwind.css">
+    <link type="text/css" rel="stylesheet" href="particles.js">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" href="https://www.classicgaming.cc/classics/pac-man/images/icons/pac-man-512x512.png">
+    <title>Chat room</title>
 </head>
 
-<body>
-<div class="min-h-screen bg-transparent py-6 flex flex-col justify-center sm:py-12 absolute inset-0">
-  <div class="relative py-3 sm:max-w-xl sm:mx-auto">
-    <div class="absolute inset-0 bg-gradient-to-r from-green-200 to-green-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
-    <div class="relative px-4 py-10 bg-gray-200 shadow-lg sm:rounded-3xl sm:p-20">
-      <div class="max-w-md mx-auto">
-        <div class="divide-y divide-gray-200">
-          <div class="py-0 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
-            <p class="text-green-700">Please login</p>
-            <form class="grid" name="login">
-              Username:<input class="border-b border-t border-l border-r border-black rounded-md outline-none pl-1" type="text" name="userid"/>
-              Password:<input class="border-b border-t border-l border-r border-black rounded-md outline-none pl-1" type="password" name="pswrd"/>
-            </form>
-          </div>
-          <div class="pt-4 text-base leading-6 font-bold sm:text-lg sm:leading-7">
-            <p>
-              <a href="chatroom.html" class="text-green-700 hover:text-green-900">Login</a>
-            </p>
-          </div>
+<body onLoad="loadPage()">
+
+    <div class="min-h-screen bg-black flex flex-col justify-center fixed inset-0">
+        <div class="relative">
+            <div class="fixed inset-0 flex flex-col justify-center items-center">
+                <div class="bg-gray-200 shadow-lg rounded-3xl fixed"
+                    style="max-width:75%;min-width:75%;max-height:75%;min-height:75%;">
+                    <div class="">
+                        <div class="divide-y divide-gray-200">
+                            <div class="text-base leading-7 text-gray-700 sm:text-lg sm:leading-7">
+                                <p class="text-black font-extrabold font-sans pl-4 pt-3 text-2xl">Chatroom</p>
+                                
+                                        <input class="border-1 border-black p1-1 float-right" type="text" name="nickname" id="nickNameInput" autocomplete="off" style="margin-right:2%">
+                                        <label class="float-right" for="nickNameInput" style="margin-right:1%">Nickname</label> 
+                                <p class="text-black font-bold font-sans pl-7 pb-4 text-sm">Welcome to the chat room</p>
+
+                                <!-- Chatbox -->
+                                <div id="messages" class="fixed overflow-y-scroll pl-3"
+                                    style="max-width:75%;min-width:75%;max-height:55%;min-height:55%;">
+        
+                                    <script>
+                                        function loadPage() {                      
+                                            scrollDown;
+                                            document.getElementById("input").focus();
+                                        }
+
+                                        function scrollDown() {
+                                            var objDiv = document.getElementById("messages");
+                                            objDiv.scrollTop = objDiv.scrollHeight;
+                                        }
+
+                                        function readFile() {
+                                            fetch('log/log.txt')
+                                                .then(response => response.text())
+                                                .then(text => console.log(text))
+                                        }
+
+                                    </script>
+
+                                    <div id="message-container">
+                                        <!--Messages are contained here-->
+                                    </div>
+                                </div>     
+
+                                <div class="px-2 pt-6 divide-y-2 divide-gray-600 divide-solid absolute w-full bottom-10">
+                                    <p></p>
+                                    <div class="max-h-px pt-2">
+
+                                        
+                                        
+
+                                        
+
+                                            
+                                                                                        
+                                            <form id="form" action="">
+                                                <input type="text" id="input" autocomplete="off" />
+                                                <label for="input" style="margin-right:1%" class="float-left">Type Message</label>                                             
+                                                <div>
+
+                                                    <button style="max-width:100%;min-width:100%;outline:none;"                                         
+                                                    class="bg-blue-400 hover:bg-blue-light text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-black rounded-xl mt-2">Send</button>
+                                                </div>
+                                            </form>                                           
+                                        
+                                    </div>
+                                </div>
+                                <div class="text-base leading-6 font-bold sm:text-lg sm:leading-7"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="particles-js">
-  <script type="text/javascript" src="particles.js"></script>
-  <script type="text/javascript" src="app.js"></script>
-</div>
-  <div>
-    <p class="absolute bottom-0 left-0 text-sm text-white pb-2 pl-2">Copyright (c) Tim Uding & Joe Smith  2020</p>
-  </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+
+        <script>
+
+        var socket = io();
+        var form = document.getElementById('form');
+        var input = document.getElementById('input');
+        let nickname = document.getElementById("nickNameInput");
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (input.value) {
+            socket.emit('chat message', input.value);
+            input.value = "";
+            }
+        });
+        socket.on('chat message', function(msg) {
+                document.getElementById("message-container").innerHTML +=
+                `<div class="w3-panel w3-card-2 break-words rounded-xl" style="margin-top: 1%;;margin-right: 5%;">
+                    <header class="float-left text-xs pt-1.5 font-bold">` + nickname.value + `</header>
+                    <br /><p>` + msg + `</p>
+                    <footer class="float-right text-xs pb-1.5 font-bold"> </footer>
+                    </div>` 
+        });
+        messages.append      
+        </script>
+
 </body>
 </html>
